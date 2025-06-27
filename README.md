@@ -3,8 +3,6 @@
 **Vb2Py.py** is a hand-ported, modern-Python replacement for a 7,000+ line Visual Basic macro originally used inside Keysight/AWR Microwave Office projects.  
 The goal is to keep the behaviour 100% identical while replacing out-of-date VB patterns with maintainable, testable Python 3 code.
 
----
-
 ## ✨ Key Features
 
 | Area             | What changed vs. VB                                         |
@@ -18,7 +16,6 @@ The goal is to keep the behaviour 100% identical while replacing out-of-date VB 
 | Error handling   | Structured `try/except`; placeholder `error_handler()` for future central handling |
 | Unit-testability | Functions side-effect-free where practical; stubs replace external AWR API calls |
 
----
 
 ## 📦 Installation
 
@@ -30,8 +27,6 @@ pip install -r requirements.txt                    # currently only std-lib need
 # (If you only need to read the script, a browser is fine; no install.)
 ```
 
----
-
 ## 🚀 Quick Start
 
 ```bash
@@ -41,7 +36,6 @@ python Vb2Py.py                # runs default export-check dialog in console
 *Heads-up: most UI is still stubbed.*  
 Core routines (`export_check()`, `check_and_fix_pdk()`, …) are fully functional for batch-style invocation.
 
----
 
 ## 🗺️ Project Layout
 
@@ -52,8 +46,6 @@ Core routines (`export_check()`, `check_and_fix_pdk()`, …) are fully functiona
 ├── tests/            ← pytest unit tests (WIP)
 └── README.md
 ```
-
----
 
 ## 🛠️ Development
 
@@ -71,8 +63,6 @@ pytest -q
 2. Ensure pytest, ruff, and black pass in CI.
 3. PR template will prompt for a short change-log entry.
 
----
-
 ## 📑 Roadmap
 
 - [ ] Replace dialog stubs with Tkinter UI
@@ -81,7 +71,6 @@ pytest -q
 - [ ] Switch file paths to `pathlib.Path` everywhere
 - [ ] Auto-generate CLI from stubs with [typer](https://typer.tiangolo.com/)
 
----
 
 ## 🙏 Acknowledgements
 
@@ -89,14 +78,12 @@ pytest -q
 - Conversion guided by ChatGPT (o3), manual refactor by @<your name>.
 - Icons from Twemoji (CC-BY 4.0).
 
----
 
 ## ⚖️ License
 
 Distributed under the MIT License.  
 See [LICENSE](LICENSE) for details.
 
----
 
 > **Where to edit:**  
 > • Replace every `<YOUR-GH-USER>` with your real GitHub username.  
